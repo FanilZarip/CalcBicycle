@@ -17,9 +17,9 @@ let mathS = {
     sub,
 };
 
-console.log(mathS.sum.id);
 
 let resultsForNum = '';
+
 let mathOperation = null;
 let correctedResult = null;                   
 
@@ -31,6 +31,7 @@ console.log(numbers); //Print created objects to console log
 
 
     resultsForNum = 0;
+
     
 
     for (const number of numbers) {
@@ -40,21 +41,34 @@ console.log(numbers); //Print created objects to console log
         number.addEventListener('click', printNum1);
     
         function printNum1 () {
+
             resultsForNum = resultsForNum + number.innerText;
-            console.log('num1', resultsForNum);
-            console.log('ReallyNum1', num1);
+
+            let resultsForNumLength = resultsForNum.length;
+
+            if (resultsForNumLength > 6) {
+                result.style.fontSize = "45px"
+            } else {
+                result.style.fontSize = "96px"
+            }
             result.innerText = +resultsForNum;
             num1 = +resultsForNum;
+
         }
 
         
 
         function printNum2 () {
             resultsForNum = resultsForNum + number.innerText;
-            console.log('num2', resultsForNum);
-            console.log('ReallyNum2', num2);
             result.innerText = +resultsForNum;
             num2 = +resultsForNum;
+            
+            let resultsForNumLength = resultsForNum.length;
+
+            if (resultsForNumLength > 6) {
+                result.style.fontSize = "45px"
+            }
+            
         }
         
         for (const key in mathS) {
@@ -87,6 +101,7 @@ console.log(numbers); //Print created objects to console log
             num1 = 0;
             num2 = 0;
             result.innerText = +resultsForNum;
+            result.style.fontSize = "96px";
         }
 
         function startCalculating () {

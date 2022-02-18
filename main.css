@@ -58,6 +58,10 @@ form {
     text-align: right;
     /* Dark / Text */
     color: #FFFFFF;
+    height: 113px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .butons_wrapper {
