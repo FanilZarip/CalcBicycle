@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+div {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	letter-spacing: 0;
+	box-sizing: border-box;
+	font-family: "Work Sans", Arial, sans-serif;
+	font-size: 32px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+nav,
+span,
+section,
+ul,
+li,
+input,
+form {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 364px;
+    background-color: #17171C;
+}
+
+/* .container{
+    width: 364px;
+    height: 582px;
+} */
+
+.d-flex {
+    display: flex;
+}
+
+.calculator_wrapper {
+    max-width: 324px;
+    margin: auto;
+}
+
+.result_text {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 96px;
+    text-align: right;
+    /* Dark / Text */
+    color: #FFFFFF;
+}
+
+.butons_wrapper {
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.numbers {
+    flex-grow: 3;
+}
+
+.number__buttons_wrapper {
+    flex-wrap: wrap;
+}
+
+.numbers div p {
+    background-color: #2E2F38;
+    margin-right: 16px;
+}
+
+.numbers div p:hover {
+    background-color: #6e6e6e;
+    cursor: pointer;
+}
+
+.numbers div p:active {
+    background-color: #fff;
+    color: #2E2F38;
+}
+
+.button {
+    border-radius: 24px;
+    padding: 17px 24px;
+    margin-top: 16px;
+    text-align: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+    user-select: none;
+    max-height: 72px;
+    display: flex;
+    align-items: center;
+    width: 69px;
+    height: 72px;
+}
+
+.math_operations__button {
+    background: #4B5EFC;    
+}
+
+.math_operations__button:hover {
+    background: #4956c9;
+    cursor: pointer;
+}
+
+.math_operations__button:active {
+    background: #f12828;
+}
+
+.clear__buttons p {
+    justify-content: center;
+}
+
+.full__clear {
+    background-color: #4E505F !important;
+    width: 100%;
+}
+
+.full__clear:hover {
+    background-color: #6e6e6e !important;
+    cursor: pointer;
+}
+
+.full__clear:active {
+    background-color: #fff !important;
+    color: #2E2F38;
+}
+
+.number_zero {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.clear__backspace {
+    font-size: 23px;
+}
